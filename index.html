@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <link href="assets/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
+    
+
+    <style type="text/css">
+    
+      .h11:hover{
+        
+        transition-duration: 0s;
+      }
+        .img1 {
+            width: 300px;
+            height: 120px;
+            
+            transition-property: width, height;
+            transition-duration: 2s;
+        }
+        .div1:hover {
+           background-color: lightyellow;
+           color:red;
+           
+        }
+
+        .img1:hover{
+           width: 430px;
+           height: 160px;
+        }
+
+        input,textarea{
+          background: #CCEEFF;
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<font face="cwtexyen"><body style=" background: wheat">
+	<div class="resume">
+  <div class="left">
+    <h1 class="ml8">
+  <span class="letters-container">
+    <span class="letters letters-left">涵</span>
+    <span class="letters bang">!</span>
+  </span>
+  <span class="circle circle-white"></span>
+  <span class="circle circle-dark"></span>
+  <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml8 .circle-white',
+    scale: [0, 3],
+    opacity: [1, 0],
+    easing: "easeInOutExpo",
+    rotateZ: 360,
+    duration: 1100
+  }).add({
+    targets: '.ml8 .circle-container',
+    scale: [0, 1],
+    duration: 1100,
+    easing: "easeInOutExpo",
+    offset: '-=1000'
+  }).add({
+    targets: '.ml8 .circle-dark',
+    scale: [0, 1],
+    duration: 1100,
+    easing: "easeOutExpo",
+    offset: '-=600'
+  }).add({
+    targets: '.ml8 .letters-left',
+    scale: [0, 1],
+    duration: 1200,
+    offset: '-=550'
+  }).add({
+    targets: '.ml8 .bang',
+    scale: [0, 1],
+    rotateZ: [45, 15],
+    duration: 1200,
+    offset: '-=1000'
+  }).add({
+    targets: '.ml8',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1400
+  });
+
+anime({
+  targets: '.ml8 .circle-dark-dashed',
+  rotateZ: 360,
+  duration: 8000,
+  easing: "linear",
+  loop: true
+}); </script>
+
+
+    <h4 class="h44"><img src="assets/images/my.jpg"  width="210px" alt=""  class="hue-rotate" ></h4>
+    <hr>
+    <font size="4px"><p><div class="h44" ><b>
+                &nbsp;&nbsp;<span class="fa fa-female"></span>姓名:邱郁涵 
+                <p> &nbsp;</p>
+                &nbsp;&nbsp;<span class="fa fa-birthday-cake"></span>生日:1998.11.11<p>
+                <p> &nbsp;</p>
+                &nbsp;&nbsp;<span class="fa fa-phone"></span>電話:03-2657400
+                <p> &nbsp;</p>
+                &nbsp;&nbsp;<span class="fa fa-envelope"></span>信箱:penny50@yahoo.com
+                <p> &nbsp;</p>
+                &nbsp;&nbsp;<span class="fa fa-heart"></span>興趣:打籃球、聽音樂、楓之<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谷M、吃東西
+                <p> &nbsp;</p>
+                &nbsp;&nbsp;<span class="fa fa-university"></span>學歷:溪山國小<span class="fa fa-arrow-right"></span>至善國中<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-arrow-right"></span>百齡高中<span class="fa fa-arrow-right"></span>中原大學<br><br>
+                </b></div></p></font>
+    <div class="h44" class="buttons" >
+ 
+      <a class="btn fill" href="https://penny5009.github.io/index.html" target="_blank">個人網頁</a>
+      <a href="https://www.instagram.com/helen.ceo.lebron/?hl=zh-tw"><img src="assets\images\Instagram.png" alt="" class="btn fill" width="50px"></a>
+      <a href="https://www.facebook.com/helen.qiu.7?ref=bookmarks"><img src="assets\images\fb.png" alt="" class="btn fill" width="50px"></a>
+    </div><br><br>
+   
+    <div class="h44" class="block">
+      <h4>Contact me</h4>
+      <h2>聯絡我</h2>
+         <Form Method="post" Action="MailTo:leewn@yourmail.com" Enctype="Text/Plain">
+        您的郵件信箱：
+        <Input Type="Text" Name="email" Size="25" MaxLength="50"><br>
+       您的寶貴建議：
+        <TextArea Name="Comemt" Cols="30" Rows="3">
+        </TextArea>
+        <Input Type="SubMit" Value="確 認 傳 送">
+        <Input Type="Reset" Value="放 棄 清 除"></Form>
+    </div>
+  </div>
+  <div class="right">
+    <div class="decoration" class="div1"><span class="fa fa-bicycle"></span>人生就像騎單車，想保持平衡就得往前走<h1 class="h11"><img class="img1" src="assets/images/d.jpg"  width="260px" ></h1></div><br><br>
+    <div class="block">
+      <h4>Experience </h4>
+      <h2>大學經歷</h2>
+      <button class="accordion" >良善自治會-會長</button>
+            <div class="panel">
+              <img src="assets\images\88.jpg" >
+              <p>被選為自治會會長是一件榮幸的事，在思想跟做事上面都成熟許多，也認識很多優秀的幹部們，也因為當會長，體會到所謂的得與失，希望能好好把這段日子學習到的，傳承給下一屆的主幹。</p>
+            </div>
+            <button class="accordion">環境服務學習-環服長</button>
+            <div class="panel">
+              <img src="assets\images\77.jpg" >
+              <p>有時在上課會分享自己的一些經歷給學生聽，看到他們很認真在聽，和有所回應還滿開心的，代表我講的話比掃地有趣，學生有時也會關心我，覺得很欣慰。</p>
+            </div>
+            <button class="accordion">創意啦啦隊-舞者</button>
+            <div class="panel">
+              <img src="assets\images\aa.jpg" >
+              <p>當時拿到季軍，不枉費我們當時每天從早練到晚，都特別努力認真，不只要練舞還要跑步、練體能，現在想起那段練習的苦日子，似乎已經是好久以前的事情了。</p>
+            </div>
+            <button class="accordion">迎新宿營-隊輔組</button>
+            <div class="panel">
+              <img src="assets\images\99.jpg" >
+              <p>暑假都奉獻給宿營了，練舞、練香扇、演戲、練團康，當時很瘋狂，隨時都處在嗨的情況，大家好像都有用不完的體力，雖然手撐扇撐到很厭世，但看到成果覺得很值得。
+              </p>
+            </div>
+
+
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");0.
+
+        var i;
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+        });
+        }
+        </script>
+    <div class="block">
+      <section class="stats py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+            <h4 >Skills</h4>
+            <h2>專業技能</h2><br><br>
+            <div class="row">
+               <div class="col-lg-5 col-md-5">
+                  <div class="jst-must-info text-center">
+                     <div class="row stats-info">
+                        <div class="col-md-6 col-sm-6 col-6 stats-grid-1">
+                           <div class=" stats-grid">
+                              <div class="counter">90</div>/100
+                              <div class="stat-info">
+                                 <h5 class="pt-2">C# </h5>
+                              </div>
+                           </div>
+                        </div><br><br><br><br>
+                        <div class="col-md-6 col-sm-6 col-6 stats-grid-2">
+                           <div class=" stats-grid">
+                              <div class="counter">80</div>/100
+                              <div class="stat-info">
+                                 <h5 class="pt-2"> Java</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mt-lg-4 mt-md-3 mt-3 col-md-6 col-sm-6 col-6 stats-grid-3">
+                           <div class=" stats-grid">
+                              <div class="counter">70</div>/100
+                              <div class="stat-info">
+                                 <h5 class="pt-2"> AS</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mt-lg-4 mt-md-3 mt-3 col-md-6 col-sm-6 col-6 stats-grid-4">
+                           <div class=" stats-grid">
+                              <div class="counter">85</div>/100
+                              <div class="stat-info">
+                                 <h5 class="pt-2"> C </h5>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div><br>
+               <div class="col-lg-7 col-md-7 left-side-w3layouts">
+                  <div class="iteam-bar">
+                     <h5 class="pb-3">C#</h5>
+                     <div class="progress my-bar">
+                        <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%"></div>
+                     </div>
+                  </div>
+                  <div class="iteam-bar pt-lg-4 pt-3">
+                     <h5 class="pb-3">Java</h5>
+                     <div class="progress my-bar">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%"></div>
+                     </div>
+                  </div>
+                  <div class="iteam-bar pt-lg-4  pt-3">
+                     <h5 class="pb-3">Android Studio</h5>
+                     <div class="progress my-bar">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%"></div>
+                     </div>
+                  </div>
+                  <div class="iteam-bar pt-lg-4 pt-3">
+                     <h5 class="pb-3"> C language </h5>
+                     <div class="progress my-bar">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 85%"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    </div>
+  </div>
+</div>
+ <script src='assets/js/jquery-2.2.3.min.js'></script>
+     
+      <script src="assets/js/jquery.waypoints.min.js"></script>
+      <script src="assets/js/jquery.countup.js"></script>
+      <script>
+         $('.counter').countUp();
+      </script>
+
+
+
+</body></font>
+</html>
