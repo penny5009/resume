@@ -254,12 +254,34 @@ hr{
   margin:20px;
 }
 
+.accordions {
+   border-radius: 5px;
+  background-color:#CCEEFF;
+  color:  black;
+  cursor: pointer;
+  padding: 10px;
+    width:30%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin:20px;
+}
+
+
 .active, .accordion:hover {
   background-color: gold;
   color:black;
 }
 
+.active, .accordions:hover {
+  background-color: gold;
+  color:black;
+}
+
 .panel {
+  text-align: center;
   padding: 20 18px;
   background-color:#F0FFF0;
   max-height: 0;
@@ -273,8 +295,8 @@ hr{
 
 .panel img{
 
-  width:450px;
-  height:250px;
+  width:400px;
+  height:300px;
   float: none;
 
 
@@ -325,7 +347,7 @@ h1.ml8 {
   right: 40;
   
   top: 0;
-  bottom: 40;
+  bottom: 0;
 }
 
 .ml8 .circle-white {
